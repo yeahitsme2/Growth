@@ -140,14 +140,14 @@ public:
 		// The message start string is designed to be unlikely to occur in normal data.
 		// The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 		// a large 4-byte int at any alignment.
-		pchMessageStart[0] = 0x1d;
-		pchMessageStart[1] = 0x7e;
-		pchMessageStart[2] = 0xa6;
-		pchMessageStart[3] = 0x2c;
+		pchMessageStart[0] = 0x1c;
+		pchMessageStart[1] = 0x7f;
+		pchMessageStart[2] = 0xa3;
+		pchMessageStart[3] = 0x2f;
 		bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
 		vAlertPubKey = ParseHex("04a983220ea7a38a7106385003fef77896538a382a0dcc389cc45f3c98751d9af423a097789757556259351198a8aaa628a1fd644c3232678c5845384c744ff8d7");
-		nDefaultPort = 20114;
-		nRPCPort = 20115;
+		nDefaultPort = 20214;
+		nRPCPort = 20215;
 		strDataDir = "testnet";
 
 		// Modify the testnet genesis block so the timestamp is valid for a later start.
